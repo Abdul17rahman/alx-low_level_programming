@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-#include "main.h>
+#include "main.h"
 
 /**
 * print_alphabet - description check
