@@ -1,21 +1,41 @@
 #include <stdio.h>
+
+#include "main.h"
 /**
-* main - Entry point
+* print_to_98 - Check
 *
+* @n: A input integer
 *
-* Return: Always 0 (Success)
+* Description: function that prints all natural numbers
+*
+* from n to 98, followed by a new line.
+*
+* Return: Nothing
 *
 */
-
-int main(void)
+void print_to_98(int n)
 {
-	int i, sum = 0;
-
-	for (i = 0; i < 1024; i++)
+	if (n <= 98)
 	{
-		if ((i % 5) == 0 || (i % 3) == 0)
-			sum += i;
+		for (; n <= 98; n++)
+		{
+			printf("%d", n);
+			if (n == 98)
+				continue;
+			printf(", ");
+		}
+		printf("\n");
 	}
-	printf("%d\n", sum);
-	return (0);
+	else
+	{
+		for (; n >= 98; n--)
+		{
+			printf("%d", n);
+			if (n == 98)
+				continue;
+			printf(", ");
+		}
+		printf("\n");
+	}
+
 }
