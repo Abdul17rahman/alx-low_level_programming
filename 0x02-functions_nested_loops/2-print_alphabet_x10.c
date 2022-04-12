@@ -3,9 +3,9 @@
 #include "main.h"
 
 /**
-* print_alphabet - description check
+* print_alphabet_x10 - description check
 *
-* Descriptions: It print the alphabet in lowercase follow by newline
+* Descriptions: It print the alphabet (10) times in lowercase follow by newline
 *
 * Returns: nothing
 */
