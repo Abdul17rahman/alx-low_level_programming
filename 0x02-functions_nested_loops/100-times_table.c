@@ -6,13 +6,16 @@
 *
 * Return: Nothing
 *
+* putformart - formarted characters to output
+*
+* @c: number to formart
 */
 
-void putformart(int);
+void putformart(int c);
 
 void print_times_table(int n)
 {
-	int i, j;
+	int i, j, k;
 
 	if (n > 0 && n < 15)
 	{
@@ -20,23 +23,24 @@ void print_times_table(int n)
 		{
 			_putchar('0');
 			for (j = 1; j <= n; j++)
-				putformart(i * j);
+				k = i * j
+				putformart(k);
 			_putchar('\n');
 
 		}
 	}
 }
 /**
-* putformat - formatted characters to output
+* putformart - formatted characters to output
 *
-* @n: number to format
+*@c: number to format
 *
 * Return: nothing
 *
 */
-void putformart(int n)
+void putformart(int c)
 {
-	if (n <= 9)
+	if (c <= 9)
 	{
 		_putchar(',');
 		_putchar(' ');
@@ -44,20 +48,20 @@ void putformart(int n)
 		_putchar(' ');
 		_putchar(n + '0');
 	}
-	else if (n > 9 && n <= 99)
+	else if (c > 9 && c <= 99)
 	{
 		_putchar(',');
 		_putchar(' ');
 		_putchar(' ');
-		_putchar(n / 10 + '0');
-		_putchar(n % 10 + '0');
+		_putchar(c / 10 + '0');
+		_putchar(c % 10 + '0');
 	}
 	else
 	{
 		_putchar(',');
 		_putchar(' ');
-		_putchar(n / 100 + '0');
-		_putchar(n / 10 % 10 + '0');
-		_putchar(n % 10 + '0');
+		_putchar(c / 100 + '0');
+		_putchar(c / 10 % 10 + '0');
+		_putchar(c % 10 + '0');
 	}
 }
