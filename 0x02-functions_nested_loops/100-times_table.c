@@ -23,7 +23,7 @@ void print_times_table(int n)
 		{
 			_putchar('0');
 			for (j = 1; j <= n; j++)
-				k = i * j
+				k = i * j;
 				putformart(k);
 			_putchar('\n');
 
@@ -46,7 +46,7 @@ void putformart(int c)
 		_putchar(' ');
 		_putchar(' ');
 		_putchar(' ');
-		_putchar(n + '0');
+		_putchar(c + '0');
 	}
 	else if (c > 9 && c <= 99)
 	{
