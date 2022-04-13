@@ -8,8 +8,6 @@
 *
 */
 
-void putformart(int n);
-
 void print_times_table(int n)
 {
 	int i, j;
@@ -20,7 +18,7 @@ void print_times_table(int n)
 		{
 			_putchar('0');
 			for (j = 1; j <= n; j++)
-				putformat(i * j);
+				putformart(i * j);
 			_putchar('\n');
 
 		}
@@ -34,7 +32,7 @@ void print_times_table(int n)
 * Return: nothing
 *
 */
-void putformat(int n)
+void putformart(int n)
 {
 	if (n <= 9)
 	{
