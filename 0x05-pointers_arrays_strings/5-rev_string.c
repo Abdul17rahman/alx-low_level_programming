@@ -1,19 +1,42 @@
 #include "main.h"
+
+#include <stdio.h>
 /**
-* puts2 - a function that prints every other character of a string,
-* starting with the first character, followed by a new line.
-* @str: An input string
-* Return: Nothing
+* _strlen - returns the length of a given string
+* @s: string to check the length of
+* Return: returns the length of the string
 */
 
-void puts2(char *str)
+int _strlen(char *s)
 {
-	int len = 0, i = 0;
+	int i;
 
-	while (str[len] != '\0')
-		len++;
-	len -= 1;
-	for (; i <= len; i += 2)
-		_putchar(str[i]);
-	_putchar('\n');
+	i = 0;
+
+	while (s[i] != '\0')
+		i++
+	return (i);
+}
+/**
+* rev_string - reverses string in place, without printing it
+* @s: string to reverse
+* Return: void
+*/
+
+void rev_string(char *s)
+{
+	int i, len;
+
+	char a, z;
+
+	len = _strlen(s) - 1;
+	i = 0;
+
+	while (i < len)
+	{
+		a = s[i];
+		z = s[len];
+		s[i++] = z;
+		s[len--] = a;
+	}
 }
