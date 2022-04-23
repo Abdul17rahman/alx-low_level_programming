@@ -21,7 +21,7 @@ char *cap_string(char *s)
 }
 /**
 * check_seperators - Separators of words: space, tabulation, new line,
-* ,, ;, ., !, ?, ", (, ), {, and }
+* ,, ;, ., !, ?,
 * @c: an input character
 * Return: 1 if seperator, 0 otherwise
 */
