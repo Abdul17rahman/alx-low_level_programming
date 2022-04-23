@@ -1,18 +1,25 @@
 #include "main.h"
 /**
-* _strcmp - a function that compares two strings.
-* @s1: an input string
-* @s2: an input string
-* Return: The difference s1 - s2
+*_strncpy - check the code for Holberton School students.
+* @dest : int
+* @src : int
+* @n : int
+* Return: Always 0.
 */
 
-int _strcmp(char *s1, char *s2)
+char *_strncpy(char *dest, char *src, int n)
 {
-	while (*s1 && *s2)
+	int i = 0;
+
+	while (i < n && src[i] != '\0')
 	{
-		if (*s1 != *s2)
-			return (*s1 - *s2);
-		s1++, s2++;
+		dest[i] = src[i];
+		i++;
 	}
-	return (*s1 - *s2);
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
+	return (dest);
 }
