@@ -1,14 +1,13 @@
 #include "main.h"
 
 /**
-<<<<<<< HEAD
- * _strncat - a function that concatenate two strings
- * @dest: an input string
- * @src: an input string
- * @n: an input integer
- * Return: A pointer to the result.
- */
-int _strlen(char *c);
+* _strncat - a function that concatenate two strings
+* @dest: an input string
+* @src: an input string
+* @n: an input integer
+* Return: A pointer to the result.
+*/
+
 char *_strncat(char *dest, char *src, int n)
 {
 	int destlength = _strlen(dest);
@@ -19,7 +18,12 @@ char *_strncat(char *dest, char *src, int n)
 	dest[destlength + 1] = '\0';
 
 	return (dest);
-
+}
+/**
+* _strlen - function that returns the length of a string
+* @c: an input string
+* Return: an interger as the length
+*/
 int _strlen(char *c)
 {
 	int len = 0;
@@ -27,7 +31,8 @@ int _strlen(char *c)
 	while (c[len] != '\0')
 		len++;
 	return (len);
-=======
+}
+/**
 *_strncat - Funtion
 *
 *@dest: Destiny
@@ -54,5 +59,4 @@ char *_strncat(char *dest, char *src, int n)
 		r++;
 	}
 	return (dest);
->>>>>>> ed6b4c268fc53b38a64d2670f4158fdc8ff2b191
 }
