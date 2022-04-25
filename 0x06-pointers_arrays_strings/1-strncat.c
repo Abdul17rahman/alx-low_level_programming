@@ -7,6 +7,8 @@
 * Return: a pointer to the concatenated string
 */
 
+int _strlen(char *c)
+
 char *_strncat(char *dest, char *src, int n)
 {
 	int destlength = _strlen(dest);
