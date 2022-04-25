@@ -7,7 +7,7 @@
 * Return: a pointer to the concatenated string
 */
 
-int _strlen(char *c)
+int _strlen(char *c);
 
 char *_strncat(char *dest, char *src, int n)
 {
