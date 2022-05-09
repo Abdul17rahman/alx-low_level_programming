@@ -8,7 +8,7 @@
 * Description: data structure for dog
 */
 
-struct dog_t
+struct dog
 {
 	char *name;
 	float age;
