@@ -14,6 +14,10 @@ int main(void)
 	{
 		for (j = 49; j < 58; j++)
 		{
+			if ((i == j) || (j < i))
+			{
+				continue;
+			}
 			putchar(i);
 			putchar(j);
 			if (j < 58)
