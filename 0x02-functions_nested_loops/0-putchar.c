@@ -1,13 +1,15 @@
 #include <stdio.h>
 
 /**
- * main - prints a string
- * Description: This functions prints a putchar
- * Return: main return 0 for success
+ * _putchar - prints a single char
+ * Description: This functions prints a char
+ *
+ * @param: c is the character printed
+ * Return: _putchar return 0 for success
  */
 
-int main(void)
+int _putchar(char c)
 {
-	printf("_putchar\n");
+	putchar(c);
 	return (0);
 }
