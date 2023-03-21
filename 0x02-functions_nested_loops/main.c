@@ -1,13 +1,7 @@
 #include "main.h"
 
-/**
- * main - prints a string
- * Description: This functions prints a putchar
- * Return: main return 0 for success
- */
-
-int main()
+int main(void)
 {
-	_putchar();
+	print_alphabet();
 	return (0);
 }

@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - prints a string using printf
@@ -6,8 +6,12 @@
  * Return: main return 0 for true
  */
 
-int main(void)
+void print_alphabet(void)
 {
-printf("with proper grammar, but the outcome is a piece of art,\n");
-return (0);
+	int a;
+	for (a = 97; a <= 122; a++)
+	{
+		_putchar(a);
+	}
+	_putchar('\n');
 }
