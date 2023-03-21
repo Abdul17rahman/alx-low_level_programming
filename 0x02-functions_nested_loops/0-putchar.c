@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * _putchar - prints a single char
+ * main - prints a single char
  * Description: This functions prints a char
- * Return: _putchar return 0 for success
+ * Return: returns 0 for success
  */
 
 int main(void)
