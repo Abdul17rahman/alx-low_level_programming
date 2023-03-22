@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -16,19 +15,19 @@ int print_last_digit(int n)
 	if (n > 0)
 	{
 		last = n % 10;
-		_putchar(48 + last);
+		_putchar('0' + last);
 		return (last);
 	}
 	else if (n == 0)
 	{
-		_putchar(48 + n);
+		_putchar('0' + n);
 		return (n);
 	}
 	else
 	{
-		n = 10 - n;
+		n *= -1;
 		last = n % 10;
-		_putchar(48 + last);
+		_putchar('0' + last);
 		return (last);
 	}
 }
