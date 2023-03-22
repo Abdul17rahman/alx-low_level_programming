@@ -19,16 +19,16 @@ int print_last_digit(int n)
 		_putchar('0' + last);
 		return (last);
 	}
-	else if (n < 0)
+	else if (n == 0)
+	{
+		_putchar('0' + n);
+		return (n);
+	}
+	else
 	{
 		n *= -1;
 		last = n % 10;
 		_putchar('0' + last);
 		return (last);
-	}
-	else if (n == 0)
-	{
-		_putchar('0' + n);
-		return (n);
 	}
 }
