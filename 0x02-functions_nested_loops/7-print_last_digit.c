@@ -26,9 +26,9 @@ int print_last_digit(int n)
 		_putchar('0' + last);
 		return (last);
 	}
-	else
+	else if (n == 0)
 	{
-		_putchar('0');
-		return (0);
+		_putchar('0' + n);
+		return (n);
 	}
 }
