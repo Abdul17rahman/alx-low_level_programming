@@ -10,7 +10,7 @@
 
 void print_triangle(int size)
 {
-	int rows, har;
+	int rows, har, stars;
 
 	if (size == 0)
 	{
@@ -18,13 +18,13 @@ void print_triangle(int size)
 	}
 	else if (size > 0)
 	{
-		for (int rows = 0; rows < size; rows++)
+		for (rows = 0; rows < size; rows++)
 		{
-			for (int stars = (size - 1); stars > rows; stars--)
+			for (stars = (size - 1); stars > rows; stars--)
 			{
 				_putchar(' ');
 			}
-			for (int har = 0; har <= rows; har++)
+			for (har = 0; har <= rows; har++)
 			{
 				_putchar('#');
 			}
