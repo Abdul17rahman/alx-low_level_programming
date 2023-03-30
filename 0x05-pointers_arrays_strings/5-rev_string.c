@@ -10,20 +10,18 @@
 
 void rev_string(char *s)
 {
-	int len = (int)strlen(s);
-	int letter;
-	int i = 0;
-	char n[len];
+	int len = strlen(s);
+	int i, k;
+	int n = 0;
+	char rev[len];
 
-	printf("%i\n", len);
-	printf("%i\n", (int)strlen(n));
-	for (letter = len; letter > 0; letter--)
+	for (i = len; i >= 0; i--)
 	{
-		n[i] = s[letter - 1];
-		printf("%c\n", n[i]);
-		i++;
+		rev[n] = s[i - 1];
+		n++;
 	}
-	printf("%s\n", n);
-	printf("%i\n", i);
-	printf("%i\n", (int)strlen(s));
+	for (k = 0; k < len; k++)
+	{
+		*(s + k) = rev[k];
+	}
 }
