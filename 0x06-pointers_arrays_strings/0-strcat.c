@@ -2,8 +2,8 @@
 
 /**
  * _strcat - Concatenates a string
- * @dest: The string to print
- * @src: Source of the file
+ * @dest: The destination variable
+ * @src: Source pointer
  *
  * Description: Uses a for loop to concatenate the string
  * Return: a pointer to the string
@@ -11,12 +11,21 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char *new;
+	int i = strlen(dest);
+	int n = strlen(src);
+	int k, l;
+	printf("%i\n", i);
+	printf("%i\n", n);
 
-	while (src[len] != '\0')
+	for (k = 0; k < i; k++)
 	{
-		_putchar(str[len]);
-		len++;
+		if (dest[k] == '\0')
+		{
+			for (l = 0; l < n; l++)
+			{
+				dest[k] += src[l];
+			}
+		}
 	}
-	return (new);
+	return (dest);
 }
