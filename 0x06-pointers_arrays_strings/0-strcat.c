@@ -14,16 +14,16 @@ char *_strcat(char *dest, char *src)
 	int i = strlen(dest);
 	int n = strlen(src);
 	int k, l;
-	printf("%i\n", i);
-	printf("%i\n", n);
 
-	for (k = 0; k < i; k++)
+	for (k = 0; k <= i; k++)
 	{
 		if (dest[k] == '\0')
 		{
+			printf("%c", dest[k]);
 			for (l = 0; l < n; l++)
 			{
 				dest[k] += src[l];
+				k++;
 			}
 		}
 	}
