@@ -19,8 +19,7 @@ char *_strcat(char *dest, char *src)
 	{
 		if (dest[k] == '\0')
 		{
-			printf("%c", dest[k]);
-			for (l = 0; l < n; l++)
+			for (l = 0; l <= n; l++)
 			{
 				dest[k] += src[l];
 				k++;
