@@ -3,7 +3,7 @@
 /**
  * _strspn - Gets length of prefix substring
  * @s: Pointer to a string
- * @accept: The substring 
+ * @accept: The substring
  *
  * Description: This function returns the length of a substring
  * Return: a pointer to the first occurance
