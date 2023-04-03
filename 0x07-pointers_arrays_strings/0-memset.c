@@ -13,15 +13,10 @@
 char *_memset(char *s, char b, unsigned int n)
 {
 	int i;
-	s = malloc(sizeof(b));
 
-	if (s == NULL)
-		return (NULL);
-
-	for (i = 0; i < n; i++)
+	for (i = n; i > 0; i--)
 	{
 		*(s + i) = b;
 	}
-	free(s);
 	return (s);
 }
