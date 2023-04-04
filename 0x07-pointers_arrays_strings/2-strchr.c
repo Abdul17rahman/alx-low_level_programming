@@ -14,6 +14,8 @@ char *_strchr(char *s, char c)
 	int len = strlen(s);
 	int i;
 
+	if (c = '\0')
+		return (NULL);
 	for (i = 0; i < len; i++)
 	{
 		if (s[i] == c)
@@ -21,5 +23,4 @@ char *_strchr(char *s, char c)
 			return (&s[i]);
 		}
 	}
-	return (NULL);
 }
