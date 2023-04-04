@@ -14,7 +14,9 @@ char *_strpbrk(char *s, char *accept)
 	unsigned int i, j;
 	unsigned int len = strlen(s);
 
-	j = 1;
+	j = 0;
+	if (*(accept + j) == '\0')
+		return (NULL);
 	for (i = 0; i < len; i++)
 	{
 		if (*(accept + j) == *(s + i))
@@ -23,5 +25,4 @@ char *_strpbrk(char *s, char *accept)
 			return (&s[j]);
 		}
 	}
-	return (NULL);
 }

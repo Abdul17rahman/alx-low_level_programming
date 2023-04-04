@@ -16,6 +16,9 @@ unsigned int _strspn(char *s, char *accept)
 	int len2 = strlen(accept);
 	int i, k;
 
+	if (*accept == NULL)
+		return (NULL);
+
 	for (i = 0; i < len2; i++)
 	{
 		for (k = 0; k < len; k++)
