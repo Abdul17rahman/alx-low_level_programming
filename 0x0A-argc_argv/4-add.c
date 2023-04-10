@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		{
 			if (atoi(argv[i]))
 			{
-				num = abs(strtol(argv[i], NULL, 10));
+				num = abs(atoi(argv[i]));
 				sum += num;
 			}
 			else
