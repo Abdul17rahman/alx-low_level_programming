@@ -2,7 +2,7 @@
 
 /**
  * _puts - Prints a string
- * @str: The string to print
+ * @s: The string to print
  *
  * Description: Uses a for loop to print the string
  * Return: 0 for success
