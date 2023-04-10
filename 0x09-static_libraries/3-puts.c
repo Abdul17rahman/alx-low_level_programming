@@ -8,14 +8,7 @@
  * Return: 0 for success
  */
 
-void _puts(char *str)
+void _puts(char *s)
 {
-	int len = 0;
-
-	while (str[len] != '\0')
-	{
-		_putchar(str[len]);
-		len++;
-	}
-	_putchar('\n');
+	puts(s);
 }
