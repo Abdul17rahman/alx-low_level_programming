@@ -32,10 +32,9 @@ char *str_concat(char *s1, char *s2)
 	}
 	for (j = 0; s2[j] != '\0'; j++)
 	{
-		dup[k] = s2[j];
-		k++;
+		dup[k + j] = s2[j];
 	}
-	dup[k] = '\0';
+	dup[size] = '\0';
 	return (dup);
 
 }
