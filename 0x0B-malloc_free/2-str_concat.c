@@ -11,15 +11,20 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int i, j, k, len = strlen(s1), len2 = strlen(s2);
+	int i, j, k, size, len = strlen(s1), len2 = strlen(s2);
 
 	char *dup;
 
-	dup = malloc(sizeof(char) * (len + len2));
+	size = len + len2;
+	dup = malloc(sizeof(char));
 	k = 0;
 
 	if (dup == NULL)
 		return (NULL);
+	if (s1 == NULL)
+		s1 = ' ';
+	if (s2 == NULL)
+		s2 = ' ';
 	for (i = 0; s1[i] != '\0'; i++)
 	{
 		dup[k] = s1[i];
