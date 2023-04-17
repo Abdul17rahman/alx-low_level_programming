@@ -13,7 +13,9 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct dog *dog1 = d;
+	struct dog *dog1;
+
+	dog1 = malloc(sizeof(struct dog));
 
 	dog1->name = name;
 	dog1->age = age;
