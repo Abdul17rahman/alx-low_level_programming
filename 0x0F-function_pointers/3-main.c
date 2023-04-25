@@ -7,15 +7,29 @@
  */
 int main(int argc, char *argv[])
 {
-	int a, b;
+	int num1, num2, results;
+	char *operator;
 
-	if (argc == 3)
+	if (argc == 4)
 	{
-		a = atoi(argv[1]);
-		b = atoi(argv[2]);
-	}
+		num1 = atoi(argv[1]);
+		operator = argv[2];
+		num2 = atoi(argv[3]);
 
-	printf("val1: %i\n", a);
-	printf("val2: %i\n", b);
+		int (*calc)(int, int) = get_op_func(operator);
+
+		results = calc(num1, num2);
+
+		printf("Results: %i\n", results);
+	}
+	else
+	{
+		return (1);
+	}
+	
+	printf("val1: %i\n", num1);
+	printf("Operator is: %s\n", operator);
+	printf("val2: %i\n", num2);
+	
 	return (0);
 }
