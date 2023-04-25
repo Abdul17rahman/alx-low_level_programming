@@ -26,10 +26,5 @@ int main(int argc, char *argv[])
 	{
 		return (1);
 	}
-	
-	printf("val1: %i\n", num1);
-	printf("Operator is: %s\n", operator);
-	printf("val2: %i\n", num2);
-	
 	return (0);
 }
