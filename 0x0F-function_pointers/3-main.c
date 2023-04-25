@@ -12,18 +12,26 @@ int main(int argc, char *argv[])
 	int num1, num2, results;
 	char *operator;
 
-	if (argc == 4)
+	if (argc != 4)
 	{
-		num1 = atoi(argv[1]);
-		operator = argv[2];
-		num2 = atoi(argv[3]);
-		results = get_op_func(operator)(num1, num2);
-
-		printf("%i\n", results);
+		printf("Error\n");
+		exit(98);
 	}
-	else
+	num1 = atoi(argv[1]);
+	operator = argv[2];
+	num2 = atoi(argv[3]);
+	results = get_op_func(operator)(num1, num2);
+
+	printf("%i\n", results);
+	if(get_op_func(operator) == NULL)
 	{
-		return (1);
+		printf("Error\n");
+		exit(99);
+	}
+	if((*operator == '/' || *operator == '%') && num2 == 0)
+	{
+		printf("Error\n");
+		exit(100);
 	}
 	return (0);
 }
