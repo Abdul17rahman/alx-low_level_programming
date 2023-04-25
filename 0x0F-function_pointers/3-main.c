@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		num2 = atoi(argv[3]);
 		results = get_op_func(operator)(num1, num2);
 
-		printf("Results: %i\n", results);
+		printf("%i\n", results);
 	}
 	else
 	{
