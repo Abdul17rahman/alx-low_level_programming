@@ -23,12 +23,12 @@ int main(int argc, char *argv[])
 	results = get_op_func(operator)(num1, num2);
 
 	printf("%i\n", results);
-	if(get_op_func(operator) == NULL)
+	if (get_op_func(operator) == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	if((*operator == '/' || *operator == '%') && num2 == 0)
+	if ((*operator == '/' || *operator == '%') && num2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
