@@ -2,6 +2,8 @@
 
 /**
  * main - check the code
+ * @argc: argument count
+ * @argv: array of arguments
  *
  * Return: Always 0.
  */
@@ -15,10 +17,7 @@ int main(int argc, char *argv[])
 		num1 = atoi(argv[1]);
 		operator = argv[2];
 		num2 = atoi(argv[3]);
-
-		int (*calc)(int, int) = get_op_func(operator);
-
-		results = calc(num1, num2);
+		results = get_op_func(operator)(num1, num2);
 
 		printf("Results: %i\n", results);
 	}
