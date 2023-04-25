@@ -9,19 +9,21 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = 0, bytes = atoi(argv[1]);
+	int i = 0, byt;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		exit(1);
 	}
-	if (bytes < 0)
+	byt = atoi(argv[1]);
+
+	if (byt < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
-	while (i < (bytes - 1))
+	while (i < (byt - 1))
 	{
 		printf("%02hhx ", ((char *)main)[i]);
 		i++;
