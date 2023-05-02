@@ -3,8 +3,8 @@
 /**
  * insert_nodeint_at_index - insert at a given index
  * @head: pointer to the list
- * @idx
- * @n
+ * @idx: index where we insert
+ * @n: data to be inserted
  *
  * Description: insert a node at a given index
  * Return: node
@@ -12,11 +12,11 @@
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *before;
+	listint_t *before *head;
 	listint_t *new;
 	unsigned int i;
 
-	new = (listint_t *)malloc(sizeof(listint_t));
+	new = malloc(sizeof(listint_t));
 
 	if (new == NULL || head == NULL)
 		return (NULL);
