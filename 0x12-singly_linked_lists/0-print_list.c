@@ -16,7 +16,7 @@ size_t print_list(const list_t *h)
 
 	link = h;
 
-	if (!link)
+	if (link == NULL)
 		return (-1);
 
 	while (link)
