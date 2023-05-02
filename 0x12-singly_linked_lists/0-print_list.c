@@ -12,20 +12,13 @@ size_t print_list(const list_t *h)
 {
 	unsigned int el = 0;
 
-	const list_t *link;
-
-	link = h;
-
-	if (link == NULL)
-		return (-1);
-
-	while (link)
+	while (h)
 	{
-		if (link->str == NULL)
+		if (h->str == NULL)
 			printf("[0] (nil)\n");
 		else
-			printf("[%i] %s\n", link->len, link->str);
-		link = link->next;
+			printf("[%i] %s\n", h->len, h->str);
+		h = h->next;
 		el++;
 	}
 	return (el);
