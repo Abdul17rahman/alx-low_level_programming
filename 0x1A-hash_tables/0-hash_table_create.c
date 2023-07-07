@@ -29,7 +29,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	while (i < size)
 	{
 		table_nodes[i] = NULL;
-		i++
+		i++;
 	}
 	new_table->size = size;
 	new_table->array = table_nodes;
