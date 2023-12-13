@@ -1,9 +1,17 @@
 #include "search_algos.h"
 
+/**
+ * min - Searches an element.
+ * @a: pointer to the first element
+ * @b: size of an array
+ *
+ * Description: jumps searches thru the array
+ * Return: the value
+ */
 
 size_t min(size_t a, size_t b)
 {
-	return (a < b) ? (a) : (b);
+	return ((a < b) ? (a) : (b));
 }
 /**
  * jump_search - Searches an element.
